@@ -1,0 +1,28 @@
+GET http://localhost:5000
+
+###
+
+GET http://localhost:5000/telefoane
+
+
+###
+
+
+GET http://localhost:5000/telefoane/1
+
+
+###
+
+POST http://localhost:5000/telefoane
+content-type: application/json
+
+{
+    "marca":"Allview",
+    "model":"A10",
+    "rezolutieCamera":88,
+    "are5G":false
+}
+
+###
+
+PUT http://localhost:5000/telefoane/1?marca=Sony&model=Xperia10&id=100
