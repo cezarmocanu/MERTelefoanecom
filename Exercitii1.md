@@ -18,7 +18,7 @@ const v2 = [6,0,8,9,0];
 
 
 
-### 4)Se da secventa urmatoare. Foloseste functiile speciale ale array-urilor precum si spread operator(...) pentru a a scurta sintaxa si a corecta erorile de imutabilitate(vezi capitolul despre spread operator).
+### 4)Se da secventa urmatoare. Foloseste functiile speciale ale array-urilor precum pentru a a scurta sintaxa si a corecta erorile de imutabilitate(vezi capitolul despre spread operator).
 
 ```javascript
 const v = [
