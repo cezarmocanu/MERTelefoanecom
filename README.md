@@ -505,9 +505,3 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 
 
-
-
-
-
-
-
