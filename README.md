@@ -1,5 +1,32 @@
 # M(MySQL)E(Express)R(React)Telefoanecom
 
+<h1>Cuprins</h1>
+
+<ol>
+    <li>
+        <h4>Baze</h4>
+        <ol>
+            <li><a href="#c11">Spatii</a></li>
+            <li><a href="#c12">Variabile</a></li>
+            <li><a href="#c13">Unpacking</a></li>
+            <li><a href="#c14">Conditii</a></li>
+            <li><a href="#c15">For,While</a></li>
+            <li><a href="#c16">Array</a></li>
+            <li><a href="#c17">Functii si functii lambda</a></li>
+            <li><a href="#c18">Lambda shorthand</a></li>
+            <li><a href="#c19">Closure</a></li>
+            <li><a href="#c110">Spatii</a></li>
+            <li><a href="#c111">Spatii</a></li>
+            <li><a href="#c112">Spatii</a></li>
+            <li><a href="#c113">Spatii</a></li>
+            <li><a href="#c114">Spatii</a></li>
+            <li><a href="#c115">Spatii</a></li>
+            
+           
+        </ol>
+    </li>
+    
+</ol>
 
 # CURS JS
 # 1.BAZE
@@ -174,7 +201,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-## 1.8 Functii lambda si shorthand
+## 1.8 Lambda shorthand
 ```javascript
 {
     const patrat = (x) => {
