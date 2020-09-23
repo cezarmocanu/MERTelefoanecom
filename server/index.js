@@ -3,6 +3,7 @@ const app = require('express')();
 const bodyParser = require("body-parser");
 const database = require("./database");
 const Telefon = require("./Telefon");
+const connection = require("./connection");
 const port = 5000;
 
 app.use(bodyParser.json());
@@ -66,5 +67,11 @@ app.delete("/telefoane/:id",(req,res)=>{
 
 
 app.listen(port,()=>{
+    try{
+        connection.authenticate();
+    }
+    catch(e){
+        console.log(e);
+    }
     console.log(`Listening ${port}...`);
 })
