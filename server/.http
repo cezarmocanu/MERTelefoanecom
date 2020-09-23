@@ -25,4 +25,7 @@ content-type: application/json
 
 ###
 
-PUT http://localhost:5000/telefoane/1?marca=Sony&model=Xperia10&id=100
+PUT http://localhost:5000/telefoane/1?marca=Sony&model=Xperia10
+
+###
+DELETE http://localhost:5000/telefoane/1
