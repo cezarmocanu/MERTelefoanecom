@@ -1,7 +1,7 @@
 # M(MySQL)E(Express)R(React)Telefoanecom
 
-<h1>Cuprins</h1>
 
+<h1>Cuprins</h1>
 <ol>
     <li>
         <h4>Baze</h4>
@@ -21,14 +21,16 @@
             <li><a href="#c113">Promisiuni si functii asincrone</a></li>
             <li><a href="#c114">Obiecte</a></li>
             <li><a href="#c115">Spread operator si imutabilitate</a></li>
-            
-    
+         </ol>
+      </li>
 
-# CURS JS
-# 1.BAZE
-# ES6 ES2015
+</ol>
+`
 
-<div id="c11"></div>
+# CURS JS -ES6 ES2015
+
+<div id="c11"></div>`
+
 ## 1.1 Spatii
 
 #### spatiu global
@@ -41,7 +43,8 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c12"></div>
+<div id="c12"></div>`
+
 ## 1.2 Variabile
 
 ```javascript
@@ -70,7 +73,8 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     variabilaNeconstanta++;
 }
 ```
-<div id="c13"></div>
+<div id="c13"></div>`
+
 ## 1.3 Unpacking
 
 ```javascript
@@ -105,7 +109,8 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c14"></div>
+<div id="c14"></div>`
+
 ## 1.4 Conditii
 
 ```javascript
@@ -138,7 +143,8 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     }
 }
 ```
-<div id="c15"></div>
+<div id="c15"></div>`
+
 ## 1.5 For,while
 
 ```javascript
@@ -158,7 +164,8 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 }
 ```
-<div id="c16"></div>
+<div id="c16"></div>`
+
 ## 1.6 Array
 
 ```javascript
@@ -181,7 +188,9 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     }
 }
 ```
-<div id="c17"></div>
+
+<div id="c17"></div>`
+
 ## 1.7 Functii si functii lambda
 
 ```javascript
@@ -203,7 +212,9 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     console.log(sumArrow.prototype);
 }
 ```
-<div id="c18"></div>
+
+<div id="c18"></div>`
+
 ## 1.8 Lambda shorthand
 
 ```javascript
@@ -219,7 +230,9 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     patrat2(10);
 }
 ```
-<div id="c19"></div>
+
+<div id="c19"></div>`
+
 ## 1.9 Closure
 
 ```javascript
@@ -232,7 +245,8 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c110"></div>
+<div id="c110"></div>`
+
 ## 1.10 Triplu si dublu egal
 
 ```javascript
@@ -249,12 +263,16 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 }
 ```
-<div id="c111"></div>
+
+<div id="c111"></div>`
+
 ## 1.11 Array functions
 
 ```javascript
 ```
-<div id="c112"></div>
+
+<div id="c112"></div>`
+
 ## 1.12 Array functional programming
 
 ```javascript
@@ -309,7 +327,8 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c113"></div>
+<div id="c113"></div>`
+
 ## 1.13 Promisiuni si functii asincrone
 
 ```javascript
@@ -354,7 +373,9 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     curataPraful();
 }
 ```
-<div id="c114"></div>
+
+<div id="c114"></div>`
+
 ## 1.14 Obiecte in js
 
 ### obiecte din functii (deprecated)
@@ -404,7 +425,9 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 }
 ```
-<div id="c115"></div>
+
+<div id="c115"></div>`
+
 ## 1.15 Spread operator
 
 ```javascript
