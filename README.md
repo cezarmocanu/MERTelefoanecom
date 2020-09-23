@@ -43,8 +43,8 @@
 
 ## 1.1 Spatii <a href="#cc"> :scroll: :arrow_up:</a>
 
-#### spatiu global
 ```javascript
+//spatiu global
 const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste tot";
 //spatiu privat, sau cu scop
 {
