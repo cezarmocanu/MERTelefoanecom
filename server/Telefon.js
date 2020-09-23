@@ -1,5 +1,4 @@
-const Telefon = (id,marca,model,rezolutieCamera,are5G) => ({
-    id,
+const Telefon = (marca,model,rezolutieCamera,are5G) => ({
     marca,
     model,
     rezolutieCamera,

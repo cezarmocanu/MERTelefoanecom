@@ -15,19 +15,23 @@ app.get("/",(req,res)=>{
 })
 
 app.get("/telefoane",(req,res)=>{
-    return res.json(database.getAll());
+    //return res.json(database.getAll());
+    database.getAll().then(result =>{
+        return res.json(result);
+    })
 })
 
 app.get("/telefoane/:id",(req,res)=>{
     const {id} = req.params;
-    return res.json(database.getOne(id));
+    database.getOne(id).then(result =>{
+        return res.json(result[0]);
+    })
 })
 
 
 app.post("/telefoane",(req,res)=>{
     const {marca,model,rezolutieCamera,are5G} = req.body;
-    const newTelefon = Telefon(database.getAll().length,
-                                marca,
+    const newTelefon = Telefon( marca,
                                 model,
                                 rezolutieCamera,
                                 are5G);
@@ -38,29 +42,34 @@ app.post("/telefoane",(req,res)=>{
 app.put("/telefoane/:id",(req,res)=>{
     const {id} = req.params;
 
-    const tel = database.getOne(id);
+    database.getOne(id).then(result=>{
+        const tel = result[0].dataValues;
+        if(req.query.id)
+            delete req.query.id;
 
-    if(req.query.id)
-        delete req.query.id;
+        if(!tel)
+            return res.json({});
 
-    if(!tel)
-        return res.json({});
+        const newTelefon = {...tel,
+                            ...req.query};
 
-    const newTelefon = {...tel,
-                        ...req.query};
-
-    database.update(id,newTelefon);
-    return res.json(newTelefon);
-
+        database.update(id,newTelefon);
+        return res.json(newTelefon);
+    });
 });
 
 app.delete("/telefoane/:id",(req,res)=>{
     const {id} = req.params;
-    const tel = database.getOne(id);
-    if(!tel)
-        return res.json({});
-    database.deleteOne(id);
-    return res.json(tel);
+
+    database.getOne(id).then(result =>{
+        if(!result[0])
+            return res.json({});
+            
+        database.deleteOne(id);
+        return res.json(result[0]);
+    })
+
+
 })
 
 

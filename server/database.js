@@ -1,3 +1,5 @@
+const {Telefon} = require("./connection").models;
+
 //private
 const database = [];
 
@@ -6,25 +8,26 @@ const getIndex = (id) => {
     return database.findIndex(element => element.id === parseInt(id));
 }
 
-const getAll = () => {
-    return database;
+const getAll = async () => {
+    //returnam un promise
+    return await Telefon.findAll();
 }
 
-const getOne = (id) => {
-    return database[getIndex(id)];
+const getOne = async (id) => {
+    return await Telefon.findAll({where:{id}});
 }
 
-const create = (telefon) => {
-    database.push(telefon);
+const create = async (telefon) => {
+    await Telefon.create(telefon);
 }
 
 
-const update = (id,telefon) => {
-    database[getIndex(id)] = telefon;
+const update = async (id,telefon) => {
+    await Telefon.update(telefon,{where:{id}})
 }
 
-const deleteOne = (id) => {
-    database.splice(getIndex(id),1);
+const deleteOne = async (id) => {
+    await Telefon.destroy({where:{id}});
 }
 
 
