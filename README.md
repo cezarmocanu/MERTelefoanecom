@@ -1,4 +1,4 @@
-# MERTelefoanecom
+# M(MySQL)E(Express)R(React)Telefoanecom
 
 
 # CURS JS
@@ -201,7 +201,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ```
 
 
-## 1.10.1 Triplu si dublu egal
+## 1.10 Triplu si dublu egal
 ```javascript
 {
     console.log("EGALI")
@@ -216,8 +216,11 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 }
 ```
+## 1.11 Array functions
+```javascript
+```
 
-## 1.10 Array special functions
+## 1.12 Array special functions
 ```javascript
 {
     const arr = [1,2,3,4,5,6,7,8,9,10];
@@ -270,7 +273,8 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-## 1.11 Promisiuni si functii asincrone
+
+## 1.13 Promisiuni si functii asincrone
 ```javascript
 {
     console.log("PROMISE")
@@ -314,7 +318,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-## 1.12 Obiecte in js
+## 1.14 Obiecte in js
 
 ### obiecte din functii (deprecated)
 ```javascript
@@ -364,7 +368,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-## 1.13 Spread operator
+## 1.15 Spread operator
 
 ```javascript
 //folosim acest operator 
