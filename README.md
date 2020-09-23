@@ -58,7 +58,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ## 1.2 Variabile <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
-{
+
     const numar = 10;
     const float = 15.3;
     const boolean = true;
@@ -81,14 +81,14 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
     let variabilaNeconstanta = 10;
     variabilaNeconstanta++;
-}
+
 ```
 <div id="c13"></div>
 
 ## 1.3 Unpacking <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
-{
+
     const pachet = {
         x:10,
         y:"alpha",
@@ -116,7 +116,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     const {nume,prenume} = pachet2;
     console.log(nume + " " + prenume);
 
-}
+
 ```
 
 <div id="c14"></div>
@@ -158,7 +158,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ## 1.5 For,while <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
-{
+
 
     for(let i = 0;i < 10;i++)
     {
@@ -172,14 +172,14 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
         i++;
     }
 
-}
+
 ```
 <div id="c16"></div>
 
 ## 1.6 Array <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
-{
+
 
     const arrGol = [];
     const arr = [1,2,3,4,5];
@@ -196,7 +196,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
         console.log(arrMix[i]);
 
     }
-}
+
 ```
 
 <div id="c17"></div>
@@ -204,7 +204,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ## 1.7 Functii si functii lambda <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
-{
+
     function sum(a,b){
         return a + b;
     }
@@ -220,7 +220,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
     console.log(sum.prototype);
     console.log(sumArrow.prototype);
-}
+
 ```
 
 <div id="c18"></div>
@@ -228,7 +228,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ## 1.8 Lambda shorthand <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
-{
+
     const patrat = (x) => {
         return x * x;
     }
@@ -238,7 +238,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     const patrat2 = x => x * x;
 
     patrat2(10);
-}
+
 ```
 
 <div id="c19"></div>
@@ -246,32 +246,39 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ## 1.9 Closure <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
-{
-    console.log("CLOSURE")
-    //avem evoie de un scop
+
+    //avem evoie de un scop pentru a apela
+    //o functie care doar executa ceva
     {
-        console.log((x=>x*x)(10));
+        (x=>console.log(x+x))(10);
     }
-}
+    
+    //aici nu avem nevoie de scop 
+    //deoarece scopul este dat de console.log
+    console.log((x=>x*x)(10));
+
 ```
 
 <div id="c110"></div>
 
 ## 1.10 Triplu si dublu egal <a href="#cc"> :scroll: :arrow_up:</a>
 
+#### == compara valorile fara a lua in considerare tipul variabilei
+#### astfel toate valorile sunt transformate in stringuri
+#### === compara valorile dar si tipul fara a transforma valorile
+
 ```javascript
-{
-    console.log("EGALI")
+
     const a = 10;
     const b = "10";
     
-    console.log(10 == a);//"10" == "10" /true
-    console.log(10 == b);//"10" == "10" /true
+    console.log(10 == a);//"10" == "10" true
+    console.log(10 == b);//"10" == "10" true
 
-    console.log(10 === a);//10 === 10 ? true
-    console.log(10 === b);//10 === "10" ? false
+    console.log(10 === a);//10 === 10  true
+    console.log(10 === b);//10 === "10" false
 
-}
+
 ```
 
 <div id="c111"></div>
@@ -286,7 +293,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ## 1.12 Array functional programming <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
-{
+
     const arr = [1,2,3,4,5,6,7,8,9,10];
 
     //patratul de la fiecare numar din arr
@@ -334,7 +341,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
                                               .reduce((total,e) => total + e, 0);
     
     console.log(sumaPatratelorNumerelorPareArr);
-}
+
 ```
 
 <div id="c113"></div>
@@ -342,8 +349,6 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ## 1.13 Promisiuni si functii asincrone <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
-{
-    console.log("PROMISE")
 
     //Aceasta este o functie ce dureaza 3 secunde sa se execute
     //Asa ca "promitem" sa "trimitem" rezultatul cand am terminat functia
@@ -381,7 +386,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     spalaRufele();
     aspira();
     curataPraful();
-}
+
 ```
 
 <div id="c114"></div>
@@ -392,7 +397,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 ### obiecte din functii (deprecated) <a href="#cc"> :scroll: :arrow_up:</a>
 ```javascript
-{
+
     function Animal(nume){
         this.nume = nume;
     }
@@ -403,14 +408,14 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
     const dog = new Animal("dog function");
     dog.sayMyName();
-}
+
 ```
 
 <div id="c114b"></div>
 
 ### obiecte ES6 <a href="#cc"> :scroll: :arrow_up:</a>
 ```javascript
-{
+
     class Animal{
         constructor(nume){
             this.nume = nume;
@@ -423,14 +428,14 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
     const dog = new Animal("dog clasic es6");
     dog.sayMyName();
-}
+
 ```
 
 <div id="c114c"></div>
 
 ### obiecte functionale <a href="#cc"> :scroll: :arrow_up:</a>
 ```javascript
-{
+
     const Animal = (nume) => ({
         nume,
         sayMyName:()=>console.log(nume)
@@ -439,45 +444,39 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     const dog = Animal("dog fuctional lambda");
     dog.sayMyName();
 
-}
+
 ```
 
 <div id="c115"></div>
 
-## 1.15 Spread operator <a href="#cc"> :scroll: :arrow_up:</a>
+## 1.15 Spread operator si imutabilitate <a href="#cc"> :scroll: :arrow_up:</a>
 
+#### IMUTABILITATE : FOLOSIREA PREPONDERENTA A VARIABILELOR CONSTANTE, ASTFEL SUNTEM SIGURI CA O VARIABILA NU ISI MODIFICA VALOAREA DE LA DECLARARE PANA LA UTILIZARE
+#### ORICE VARIABILA MODIFICATA INSEAMNA O VARIABILA NOUA
 ```javascript
-//folosim acest operator 
-//pentru a ajunge la imutabilitate
-//ADICA: VREM SA FOLOSIM PREPONDERENT SPRE ABSOLUT
-//VARIABILE CONSTANTE CU CONTINUT CONSTANT
+
+   //declaram un json
+    const pachet = {
+        x:10,
+        y:20,
+        z:30
+    }
  
-//IMUTABILITATEA SE ASIGURA CA NU SE VOR MODIFICA VARIABILE 
-//DE LA DECLARAREA LOR PANA LA FOLOSIREA LOR
-//ORICE VARIABILA MODIFICATA INSEAMNA O VARIABILA NOUA
- 
-//declaram un json
-const pachet = {
-    x:10,
-    y:20,
-    z:30
-}
- 
-//vrem sa creem o variabila in care 
-//adaugam toate variabilele din pachet
-//plus inca un camp nou
-const pachetImutabil = {
-    ...pachet,
-    campNou:"string"
-}
+     //vrem sa creem o variabila in care 
+     //adaugam toate variabilele din pachet
+     //plus inca un camp nou
+     const pachetImutabil = {
+         ...pachet,
+         campNou:"string"
+     }
  
  
-//folosim acest sprea operator si pentru a 
-//combina 2 vectori
-const v1 = [1,2,3];
-const v2 = [4,5,6];
- 
-const vectorImutabil = [...v1,...v2];
+      //folosim acest sprea operator si pentru a 
+      //combina 2 vectori
+      const v1 = [1,2,3];
+      const v2 = [4,5,6];
+
+      const vectorImutabil = [...v1,...v2];
 ```
 
 <div id="c116"></div>
@@ -486,15 +485,15 @@ const vectorImutabil = [...v1,...v2];
 
 #### Pentru a nu mai folosi + la concatenarea sirurilor de caractere cu variabile vom folosi 
 ```javascript 
-const textConcat = "Text nomodificabil" + variabila + " text nemodificabil";
-const textTemplate = `Text nemodificabil ${variabila} text nemodificabil`;
+      const textConcat = "Text nomodificabil" + variabila + " text nemodificabil";
+      const textTemplate = `Text nemodificabil ${variabila} text nemodificabil`;
 ```
 ```javascript
 
-const es = "ES";
-const six = 6;
+      const es = "ES";
+      const six = 6;
 
-console.log(`Hello from Javascript ${es}${six} !!!`);
+      console.log(`Hello from Javascript ${es}${six} !!!`);
 
 ```
 
