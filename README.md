@@ -19,17 +19,25 @@
             <li><a href="#c111">Array functions</a></li>
             <li><a href="#c112">Array functional programming</a></li>
             <li><a href="#c113">Promisiuni si functii asincrone</a></li>
-            <li><a href="#c114">Obiecte</a></li>
+            <li>
+                <a href="#c114">Obiecte</a>
+                <ol>
+                    <li><a href="#c114a">Obiecte din functii (deprecated)</a></li>
+                    <li><a href="#c114b">Obiecte ES6</a></li>
+                    <li><a href="#c114c">Obiecte functionale</a></li>
+                </ol>
+            </li>
             <li><a href="#c115">Spread operator si imutabilitate</a></li>
+            <li><a href="#c116">String templates</a></li>
          </ol>
       </li>
 
 </ol>
-`
+
 
 # CURS JS -ES6 ES2015
 
-<div id="c11"></div>`
+<div id="c11"></div>
 
 ## 1.1 Spatii
 
@@ -43,7 +51,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c12"></div>`
+<div id="c12"></div>
 
 ## 1.2 Variabile
 
@@ -73,7 +81,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     variabilaNeconstanta++;
 }
 ```
-<div id="c13"></div>`
+<div id="c13"></div>
 
 ## 1.3 Unpacking
 
@@ -109,7 +117,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c14"></div>`
+<div id="c14"></div>
 
 ## 1.4 Conditii
 
@@ -143,7 +151,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     }
 }
 ```
-<div id="c15"></div>`
+<div id="c15"></div>
 
 ## 1.5 For,while
 
@@ -164,7 +172,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 }
 ```
-<div id="c16"></div>`
+<div id="c16"></div>
 
 ## 1.6 Array
 
@@ -189,7 +197,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c17"></div>`
+<div id="c17"></div>
 
 ## 1.7 Functii si functii lambda
 
@@ -213,7 +221,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c18"></div>`
+<div id="c18"></div>
 
 ## 1.8 Lambda shorthand
 
@@ -231,7 +239,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c19"></div>`
+<div id="c19"></div>
 
 ## 1.9 Closure
 
@@ -245,7 +253,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c110"></div>`
+<div id="c110"></div>
 
 ## 1.10 Triplu si dublu egal
 
@@ -264,7 +272,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c111"></div>`
+<div id="c111"></div>
 
 ## 1.11 Array functions
 
@@ -327,7 +335,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c113"></div>`
+<div id="c113"></div>
 
 ## 1.13 Promisiuni si functii asincrone
 
@@ -374,9 +382,11 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c114"></div>`
+<div id="c114"></div>
 
 ## 1.14 Obiecte in js
+
+<div id="c114a"></div>
 
 ### obiecte din functii (deprecated)
 ```javascript
@@ -393,6 +403,8 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     dog.sayMyName();
 }
 ```
+
+<div id="c114b"></div>
 
 ### obiecte clasice (ES6)
 ```javascript
@@ -412,6 +424,8 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
+<div id="c114c"></div>
+
 ### obiecte functionale
 ```javascript
 {
@@ -426,7 +440,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 }
 ```
 
-<div id="c115"></div>`
+<div id="c115"></div>
 
 ## 1.15 Spread operator
 
@@ -464,6 +478,23 @@ const v2 = [4,5,6];
 const vectorImutabil = [...v1,...v2];
 ```
 
+<div id="c116"></div>
+
+## 1.16 String templates
+
+#### Pentru a nu mai folosi + la concatenarea sirurilor de caractere cu variabile vom folosi 
+```javascript 
+const textConcat = "Text nomodificabil" + variabila + " text nemodificabil";
+const textTemplate = `Text nemodificabil ${variabila} text nemodificabil`;
+```
+```javascript
+
+const es = "ES";
+const six = 6;
+
+console.log(`Hello from Javascript ${es}${six} !!!`);
+
+```
 
 
 
