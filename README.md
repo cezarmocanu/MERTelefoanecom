@@ -1,7 +1,9 @@
 # M(MySQL)E(Express)R(React)Telefoanecom
 
 
-<h1>Cuprins</h1>
+
+ 
+<h1 id="cc"> :scroll: Cuprins</h1>
 <ol>
     <li>
         <h4>Baze</h4>
@@ -39,7 +41,7 @@
 
 <div id="c11"></div>
 
-## 1.1 Spatii
+## 1.1 Spatii <a href="#cc"> :scroll: :arrow_up:</a>
 
 #### spatiu global
 ```javascript
@@ -53,7 +55,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c12"></div>
 
-## 1.2 Variabile
+## 1.2 Variabile <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 {
@@ -83,7 +85,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ```
 <div id="c13"></div>
 
-## 1.3 Unpacking
+## 1.3 Unpacking <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 {
@@ -119,7 +121,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c14"></div>
 
-## 1.4 Conditii
+## 1.4 Conditii <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 {
@@ -153,7 +155,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ```
 <div id="c15"></div>
 
-## 1.5 For,while
+## 1.5 For,while <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 {
@@ -174,7 +176,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ```
 <div id="c16"></div>
 
-## 1.6 Array
+## 1.6 Array <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 {
@@ -199,7 +201,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c17"></div>
 
-## 1.7 Functii si functii lambda
+## 1.7 Functii si functii lambda <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 {
@@ -223,7 +225,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c18"></div>
 
-## 1.8 Lambda shorthand
+## 1.8 Lambda shorthand <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 {
@@ -241,7 +243,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c19"></div>
 
-## 1.9 Closure
+## 1.9 Closure <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 {
@@ -255,7 +257,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c110"></div>
 
-## 1.10 Triplu si dublu egal
+## 1.10 Triplu si dublu egal <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 {
@@ -274,14 +276,14 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c111"></div>
 
-## 1.11 Array functions
+## 1.11 Array functions <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 ```
 
-<div id="c112"></div>`
+<div id="c112"></div>
 
-## 1.12 Array functional programming
+## 1.12 Array functional programming <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 {
@@ -337,7 +339,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c113"></div>
 
-## 1.13 Promisiuni si functii asincrone
+## 1.13 Promisiuni si functii asincrone <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 {
@@ -384,11 +386,11 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c114"></div>
 
-## 1.14 Obiecte in js
+## 1.14 Obiecte in js <a href="#cc"> :scroll: :arrow_up:</a>
 
 <div id="c114a"></div>
 
-### obiecte din functii (deprecated)
+### obiecte din functii (deprecated) <a href="#cc"> :scroll: :arrow_up:</a>
 ```javascript
 {
     function Animal(nume){
@@ -406,7 +408,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c114b"></div>
 
-### obiecte clasice (ES6)
+### obiecte ES6 <a href="#cc"> :scroll: :arrow_up:</a>
 ```javascript
 {
     class Animal{
@@ -426,7 +428,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c114c"></div>
 
-### obiecte functionale
+### obiecte functionale <a href="#cc"> :scroll: :arrow_up:</a>
 ```javascript
 {
     const Animal = (nume) => ({
@@ -442,7 +444,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c115"></div>
 
-## 1.15 Spread operator
+## 1.15 Spread operator <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 //folosim acest operator 
@@ -480,7 +482,7 @@ const vectorImutabil = [...v1,...v2];
 
 <div id="c116"></div>
 
-## 1.16 String templates
+## 1.16 String templates <a href="#cc"> :scroll: :arrow_up:</a>
 
 #### Pentru a nu mai folosi + la concatenarea sirurilor de caractere cu variabile vom folosi 
 ```javascript 
