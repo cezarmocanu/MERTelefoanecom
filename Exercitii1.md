@@ -228,16 +228,19 @@ const result2 = {
     <h2>Mai jos se regaseste un exemplu de creeare a unui timer, ce executa o functie cu parametrii dupa un timp t.</h2>
     <ol>
         <li>
-        Sa se analizeze functia de mai jos si modul in care functioneaza;
-        ```javascript
-            const t = 1000;
-            const f = (timp) => {console.log("Am executat functia dupa ${timp}");}
-            setTimeout(()=>{
-                    f(t);
-            },t);
-        ```
-        </li>
-        <li>
+        Sa se analizeze functia de mai jos si modul in care functioneaza
+            
+```javascript
+    const t = 1000;
+    const f = (timp) => {console.log("Am executat functia dupa ${timp}");}
+    setTimeout(()=>{
+            f(t);
+    },t);
+```
+</li>
+
+        
+<li>
             Sa se creeze o <a href="https://github.com/cezarmocanu/MERTelefoanecom#c113">functie asyncrona</a> care sa returneze o promisiune. Aceasta promisiune va trimite dupa 3 secunde mesajul "Am terminat de facut taskul"
         </li>
         <li>
