@@ -241,13 +241,14 @@ const result2 = {
             Sa se creeze o <a href="https://github.com/cezarmocanu/MERTelefoanecom#c113">functie asyncrona</a> care sa returneze o promisiune. Aceasta promisiune va trimite dupa 3 secunde mesajul "Am terminat de facut taskul"
         </li>
         <li>
-            Sa se modifice functia de mai sus astfel incat sa primeasca un parametru t si returneaza mesajul "Am terminat de facut taskul dupa timpul __t__" unde __t__ este timpul in care s-a executat functia.
+            Sa se modifice functia de mai sus astfel incat sa primeasca un parametru t si returneaza mesajul "Am terminat de facut taskul dupa timpul _t_ unde _t_ este timpul in care s-a executat functia.
         </li>
         <li>
             Foloseste operatorul <a href="https://github.com/cezarmocanu/MERTelefoanecom#c113">then</a> pentru a intercepta un promise si pentru a afisa mesajul trimis de rezolvarea acestuia
         </li>
     </ol>
     <h3>Exemplu apelari functii</h3>
+    
     ```javascript
         rezolvaTask(1000).then(result => console.log(result));
     
