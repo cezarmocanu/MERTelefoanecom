@@ -249,11 +249,12 @@ const result2 = {
     </ol>
     <h3>Exemplu apelari functii</h3>
     
-    ```javascript
-        rezolvaTask(1000).then(result => console.log(result));
-    
-        const rezultat5 = rezolvaTask(5000);
-        rezultat5.then(result => console.log(result));
-    ```
+```javascript
+    rezolvaTask(1000).then(result => console.log(result));
+
+    const rezultat5 = rezolvaTask(5000);
+    rezultat5.then(result => console.log(result));
+```
+
 </li>
 </ol>
