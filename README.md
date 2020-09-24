@@ -386,6 +386,17 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     spalaRufele();
     aspira();
     curataPraful();
+    
+    //o alta metoda de a folosi un promise
+    //este folosirea operatorului .then
+    //fie asupra unei variabile ce are un promise fie asupra 
+    //unei functii ce returneaza un promise
+    
+    //ambele functii se vor realiza asincron
+    masinaSpalaRufele().then(rezultat => console.log(rezultat))
+    const rezultatSpalare = masinaSpalaRufele();
+    
+    rezultatSpalare.then(rezultat => console.log(rezultat));
 
 ```
 
