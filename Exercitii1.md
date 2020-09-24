@@ -66,7 +66,7 @@ console.log(weCanDoBetter(v));
 
 <li>
 <h2>Se dau cele doua obiecte result1, si result2.</h2>
-<p>Stiind ca in result1 reprezinta utilizatorii iar result2 reprezinta o lista de vehicule care corespunde fiecarui utilizator sa se creeze o functie care returneaza o lista cu json-uri. In fiecare json vor fi datale despre utilizator precum si o lista cu vehiculele sale.</p>
+<p>Stiind ca in result1 sunt reprezentati utilizatorii iar result2 reprezinta o lista de vehicule care corespunde unor utilizator sa se creeze o functie care primeste ca parametrii cele doua liste si returneaza o lista cu json-uri combinate. In fiecare json vor fi datale despre utilizator precum si o lista cu vehiculele sale.</p>
 
 ### Exemplu date de intrare:
 
@@ -210,5 +210,49 @@ const result2 = {
         }
 ]
 ```
+</li>
+
+<li>
+    <h2>Sa se abordeze problema de la punctul anterior cu ajutorul obiectelor User, Vehicle, si CatalogEntry . Se va avea in vedere:</h2>
+    <ol>
+        <li>CataogEntry va reprezenta un User cu obiectele sale corespunzatoare</li>
+        <li>Functia va retuna o lista de CatalogEntry</li>
+        <li>Datele de intrare vor fi parsate(transformate/procesate) cu ajutorul obiectelor User si Vehicle</li>
+        <li>Toate biectele vor avea metode de constructor, get, set, si toString</li>
+        <li>Se pot folosi oricare dintre <a href="https://github.com/cezarmocanu/MERTelefoanecom#c114">modurile de creere ale obiectelor</a></li>
+    </ol>
+    
+</li>
+
+<li>
+    <h2>Mai jos se regaseste un exemplu de creeare a unui timer, ce executa o functie cu parametrii dupa un timp t.</h2>
+    <ol>
+        <li>
+        Sa se analizeze functia de mai jos si modul in care functioneaza;
+        ```javascript
+            const t = 1000;
+            const f = (timp) => {console.log("Am executat functia dupa ${timp}");}
+            setTimeout(()=>{
+                    f(t);
+            },t);
+        ```
+        </li>
+        <li>
+            Sa se creeze o <a href="https://github.com/cezarmocanu/MERTelefoanecom#c113">functie asyncrona</a> care sa returneze o promisiune. Aceasta promisiune va trimite dupa 3 secunde mesajul "Am terminat de facut taskul"
+        </li>
+        <li>
+            Sa se modifice functia de mai sus astfel incat sa primeasca un parametru t si returneaza mesajul "Am terminat de facut taskul dupa timpul __t__" unde __t__ este timpul in care s-a executat functia.
+        </li>
+        <li>
+            Foloseste operatorul <a href="https://github.com/cezarmocanu/MERTelefoanecom#c113">then</a> pentru a intercepta un promise si pentru a afisa mesajul trimis de rezolvarea acestuia
+        </li>
+    </ol>
+    <h3>Exemplu apelari functii</h3>
+    ```javascript
+        rezolvaTask(1000).then(result => console.log(result));
+    
+        const rezultat5 = rezolvaTask(5000);
+        rezultat5.then(result => console.log(result));
+    ```
 </li>
 </ol>
