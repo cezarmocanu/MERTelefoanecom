@@ -1,15 +1,17 @@
-### 1.creeaza o functie ce returneaza suma a foua numere:
-#### a) ca si int
-#### b)ca si un camp "result" intr-un json
-#### Apeleaza si afiseaza rezultatul
+<h2>1.Creeaza doua functii ce returneaza suma a doua numere a,b. Functiile vor returna rezultatul </h2>
+<ol>
+    <li>Ca si int</li>
+    <li>Ca si un json, cu un camp result</li>
+</ol>
 
-### 2.Similar cu exercitiul 1 doar ca de data asta vei folosi arrow function
+<h2>2.Creeaza doua arrow function, respectand cerintele de la punctul 1</h2>
 
-### 3)Se dau listele v1, v2 care au  in ele numere.
-#### Sa se faca functii care sa afiseze:
-####    a)Un nou vector ce contine valorile din ambii vectori
-####    b)Suma elementelor din ambii vectori
-####    c)Se inlatura toate valorile de 0 din ambii vectori si returneaza rezultatul ca un vector nou
+<h2>3)Se dau listele v1, v2 care au  in ele numere. Sa se faca functii care sa returneze:</h2>
+<ol>
+    <li>Un nou vector ce contine valorile din ambii vectori</li>
+    <li>Suma elementelor din ambii vectori</li>
+    <li>Se inlatura toate valorile de 0 din ambii vectori si returneaza rezultatul ca un vector nou</li>
+</ol>
 
 ```javascript
 const v1 = [1,0,0,4,5];
@@ -18,7 +20,7 @@ const v2 = [6,0,8,9,0];
 
 
 
-### 4)Se da secventa urmatoare. Foloseste functiile speciale ale array-urilor precum pentru a a scurta sintaxa si a corecta erorile de imutabilitate(vezi capitolul despre spread operator).
+<h2>4)Se da secventa urmatoare. Foloseste <a href="https://github.com/cezarmocanu/MERTelefoanecom#c112">functiile speciale ale array-urilor</a> pentru a crea o noua functie in care se va scurta sintaxa si se vor corecta erorile de <a href="https://github.com/cezarmocanu/MERTelefoanecom#c115">imutabilitate</a></h2>
 
 ```javascript
 const v = [
@@ -57,13 +59,10 @@ function weCanDoBetter(v){
 console.log(weCanDoBetter(v));
 ```
 
-### 5) Se dau cele doua obiecte result1, si result2.
-#### Stiind ca in result1 reprezinta utilizatorii iar result2 reprezinta 
-#### o lista de vehicule care corespunde fiecarui utilizator
-#### sa se creeze o functie care returneaza o lista cu jsonuri. In fiecare
-#### json vor fi datale despre utilizator precum si o lista cu vehiculele sale.
+<h2>5) Se dau cele doua obiecte result1, si result2.</h2>
+<p>Stiind ca in result1 reprezinta utilizatorii iar result2 reprezinta o lista de vehicule care corespunde fiecarui utilizator sa se creeze o functie care returneaza o lista cu json-uri. In fiecare json vor fi datale despre utilizator precum si o lista cu vehiculele sale.</p>
 
-### Exemplu:
+### Exemplu date de intrare:
 
 ```javascript
 const result1 = {
@@ -126,7 +125,7 @@ const result2 = {
 }
 ```
 
-#### Rezultat Final:
+#### Exemplu rezultat pentru datele de mai sus:
 
 ```javascript
 [
