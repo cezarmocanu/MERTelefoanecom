@@ -185,8 +185,6 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     const arr = [1,2,3,4,5];
     const arrMix = [1,"2",true];
 
-    console.log("ARRAY")
-
     for(let i =0;i < arr.length;i++){
         console.log(arr[i]);
     }
@@ -209,18 +207,19 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
         return a + b;
     }
 
-    console.log(sum(10,25));
-
     const sumArrow = (a,b) => {
         return a + b;
     }
 
+    console.log(sum(10,25));
     console.log(sumArrow(10,25));
 
+```
 
+#### Diferenta este data de faptul ca arrow functionul nu are prototyp
+```javascript
     console.log(sum.prototype);
     console.log(sumArrow.prototype);
-
 ```
 
 <div id="c18"></div>
@@ -232,12 +231,17 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     const patrat = (x) => {
         return x * x;
     }
+    
+    patrat(10);
+```
 
-    patrat(5);
+#### Deoarece functia are un parametru si doar returneaza x * x se poate rescrie astfel
 
-    const patrat2 = x => x * x;
+```javascript
+   
+    const patrat = x => x * x;
 
-    patrat2(10);
+    patrat(10);
 
 ```
 
@@ -300,7 +304,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ### .map( f(e) )
 
 <p> 
- itereaza prin fiecare element dintr-un array
+ Itereaza prin fiecare element dintr-un array
  si aplica o functie e => f(e)
  returneaza un array cu elemente pe care a fost aplicat f(e)
  unde f(e) este o functie lambda cu un parametru
@@ -320,7 +324,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ### .filter( f(e) )
 
 <p> 
- itereaza prin fiecare element dintr-un array si
+ Itereaza prin fiecare element dintr-un array si
  returneaza elementele din array pentru care f(e) 
  este true unde f(e) este o functie lambda cu un parametru
  f(e)= e > 0, x,z > 0, y < 0 
@@ -339,7 +343,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ### .reduce( g(t,e) , start)
 
 <p> 
- initializeaza o variabila de total cu valoarea 'start'
+ Initializeaza o variabila de total cu valoarea 'start'
  si executa pentru fiecare element 'e' functia g(t,e) si adauga
  rezultatul in variabila de total, unde t este ultimul total
  
@@ -355,7 +359,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ### .findIndex( f(e) )
 
 <p> 
- returneaza pozitia primului element pentru care f(e) este true
+ Returneaza pozitia primului element pentru care f(e) este true
  
  f(e) = y, [x,y,z].findIndex((e) => f(e)) devine  1
 </p>
