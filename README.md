@@ -297,7 +297,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     const arr = [1,2,3,4,5,6,7,8,9,10];
 ```
 
-### .map(f(e))
+### .map( f(e) )
 
 <p> 
  itereaza prin fiecare element dintr-un array
@@ -317,7 +317,7 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
         console.log(patratArr[i]);
 ```
 
-### .filter(f(e))
+### .filter( f(e) )
 
 <p> 
  itereaza prin fiecare element dintr-un array si
@@ -336,14 +336,14 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
         console.log(pareArr[i])
 ```
 
-### .reduce(g(t,e),start)
+### .reduce( g(t,e) , start)
 
 <p> 
  initializeaza o variabila de total cu valoarea 'start'
  si executa pentru fiecare element 'e' functia g(t,e) si adauga
  rezultatul in variabila de total, unde t este ultimul total
  
- [x,y,z].reduce((e,t) => f(e),start) devine g(x)
+ [x,y,z].reduce((e,t) => f(e),start) devine g( g( g(start,x) ,y) ,z)
 </p>
  
 #### Exemplu: Sa se obtina suma elementelor din arr
@@ -352,33 +352,42 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     const suma = arr.reduce((total,element)=>total+element,0);
 ```
 
+### .findIndex( f(e) )
+
+<p> 
+ returneaza pozitia primului element pentru care f(e) este true
+ 
+ f(e) = y, [x,y,z].findIndex((e) => f(e)) devine  1
+</p>
+ 
+#### Exemplu: Sa se obtina indexul primului element din arr cu valoarea 5
+
+
 ```javascript
-    /*
-    total = 0
-
-    element = 1
-    total = total + element // 1
-    
-    element = 2
-    total = total + element // 3
-
-    element = 3
-    total = total + element // 6
-
-    */
-    console.log(suma);
 
     const indexFive = arr.findIndex(element => element === 5);
+    console.log(indexFive);
 
-    console.log(indexFive)
+```
 
+### Chaining( Înlanțuire )
 
-    //chaining
+<p>
+ Fiecare functie speciala care returneaza un array poate fi inlantuita cu o alta functie
+ pentru a obtine o flux de operatii.
+ <br/>
+ O paralela poate fi facuta cu linia de productie dintr-o fabrica de facut haine.
+ Materialul initial este trecut printr-un flux de operatii cum ar fi: taiere, coasere, apretare.
+ Astfel functia pentru flux s-ar scrie material.taiere().coasere().apretare();
+</p>
 
+#### Exemplu: Sa se obtina suma patratelor numerelor pare
+
+```javascript
     const sumaPatratelorNumerelorPareArr = arr.filter(e => e % 2 === 0)
                                               .map(e => e * e)
                                               .reduce((total,e) => total + e, 0);
-    
+                                              
     console.log(sumaPatratelorNumerelorPareArr);
 
 ```
