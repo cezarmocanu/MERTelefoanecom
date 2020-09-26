@@ -290,30 +290,69 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 
 <div id="c112"></div>
 
-## 1.12 Array functional programming <a href="#cc"> :scroll: :arrow_up:</a>
+## 1.12 Array functional programming(Functii speciale ale array-urilor) <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
 
     const arr = [1,2,3,4,5,6,7,8,9,10];
+```
 
-    //patratul de la fiecare numar din arr
-    
+### .map(f(e))
+
+<p> 
+ itereaza prin fiecare element dintr-un array
+ si aplica o functie e => f(e)
+ returneaza un array cu elemente pe care a fost aplicat f(e)
+ unde f(e) este o functie lambda cu un parametru
+ [x,y,z].map(e => f(e))  devine [f(x),f(y),f(z)]
+</p>
+
+
+#### Exemplu: Sa se obtina patratul elementelor din arr
+
+```javascript
     const patratArr = arr.map(element => element * element);
 
     for(let i=0;i<patratArr.length;i++)
         console.log(patratArr[i]);
+```
 
-    //numerele pare din arr
+### .filter(f(e))
 
+<p> 
+ itereaza prin fiecare element dintr-un array si
+ returneaza elementele din array pentru care f(e) 
+ este true unde f(e) este o functie lambda cu un parametru
+ f(e)= e > 0, x,z > 0, y < 0 
+ [x,y,z].filter(e => f(e)) devine [x,z]
+</p>
+
+#### Exemplu: Sa se obtina numerele pare din arr
+
+```javascript
     const pareArr = arr.filter(element => element % 2 === 0);
 
     for(let i=0;i<pareArr.length;i++)
         console.log(pareArr[i])
+```
 
-    //suma elementelor din arr
+### .reduce(g(t,e),start)
 
+<p> 
+ initializeaza o variabila de total cu valoarea 'start'
+ si executa pentru fiecare element 'e' functia g(t,e) si adauga
+ rezultatul in variabila de total, unde t este ultimul total
+ 
+ [x,y,z].reduce((e,t) => f(e),start) devine g(x)
+</p>
+ 
+#### Exemplu: Sa se obtina suma elementelor din arr
+
+```javascript
     const suma = arr.reduce((total,element)=>total+element,0);
+```
 
+```javascript
     /*
     total = 0
 
