@@ -192,7 +192,6 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
     for(let i =0;i < arrMix.length;i++){
         arrMix[i] = 0;
         console.log(arrMix[i]);
-
     }
 
 ```
@@ -290,6 +289,58 @@ const variabilaGlobalaInFisier = "Eu sunt o varaibila ce poate fi folosita peste
 ## 1.11 Array functions <a href="#cc"> :scroll: :arrow_up:</a>
 
 ```javascript
+    const arr = [1,2,3,4,5];
+```
+
+### .push( e )
+
+```javascript
+
+   const e = 10;
+   arr.push(e);
+   
+   console.log(arr) //1, 2, 3, 4, 5, 10
+   
+```
+
+### .pop()
+
+```javascript
+
+   arr.pop();
+   
+   console.log(arr) //1, 2, 3, 4
+```
+
+### .shift()
+
+```javascript
+
+   arr.shift();
+   
+   console.log(arr) // 2, 3, 4, 5   
+```
+
+### .indexOf(e)
+
+```javascript
+
+   const e = 5;
+   
+   const index1 = arr.indexOf(e);
+   const index2 = arr.indexOf(100);
+   
+   console.log(index1) // 4
+   console.log(index1) // -1
+```
+
+### .splice(start,stop)
+
+```javascript
+   const part1 = arr.splice(0,3);
+   
+   console.log(part1) // 1, 2, 3
+   console.log(arr) //4, 5
 ```
 
 <div id="c112"></div>
