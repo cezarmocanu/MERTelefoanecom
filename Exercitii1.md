@@ -215,10 +215,10 @@ const result2 = {
 <li>
     <h2>Sa se abordeze problema de la punctul anterior cu ajutorul obiectelor User, Vehicle, si CatalogEntry . Se va avea in vedere:</h2>
     <ol>
-        <li>CataogEntry va reprezenta un User cu obiectele sale corespunzatoare</li>
+        <li>CataogEntry va reprezenta un User cu vehiculele sale</li>
         <li>Functia va retuna o lista de CatalogEntry</li>
         <li>Datele de intrare vor fi parsate(transformate/procesate) cu ajutorul obiectelor User si Vehicle</li>
-        <li>Toate biectele vor avea metode de constructor, get, set, si toString</li>
+        <li>Toate obiectele vor avea metode de constructor, get, set, si toString</li>
         <li>Se pot folosi oricare dintre <a href="https://github.com/cezarmocanu/MERTelefoanecom#c114">modurile de creere ale obiectelor</a></li>
     </ol>
     
